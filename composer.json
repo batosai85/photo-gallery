@@ -1,0 +1,17 @@
+{
+    "name": "veljko/cms_test",
+    "authors": [
+        {
+            "name": "Veljko Veljkovic",
+            "email": "veljkobaka@hotmail.com"
+        }
+    ],
+    "require": {
+        "dannyvankooten/php-router": "dev-master"
+    },
+    "autoload" : {
+       "classmap" : [
+           "app/classes"
+        ]
+    }
+}
