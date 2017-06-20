@@ -1,4 +1,9 @@
 <?php include "./app/views/front/includes/header.php"?>
+<?php
+    if(!$session->get_is_login()){
+        header("Location: http://gallery.dev");
+    }
+?>
 <?php include "./app/views/front/includes/navbar.php"?> ;
 <!-- Page Content -->
 <div class="container">

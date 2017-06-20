@@ -78,7 +78,7 @@ class Fn
                 Comment_query::delete_comments($photo->get_id(), $database);
             }
             User_query::delete_user("users", $_GET["delete"], $_SESSION, $database);
-            header("Location: http://localhost/php/gallery/logout");
+            header("Location: http://gallery.dev/logout");
         }
     }
 

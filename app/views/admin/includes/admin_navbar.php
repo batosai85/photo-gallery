@@ -1,6 +1,6 @@
 <?php
 if(!$session->get_is_login()){
-    header("Location: http://localhost/php/gallery/login");
+    header("Location: http://gallery.dev");
 }
 ?>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">

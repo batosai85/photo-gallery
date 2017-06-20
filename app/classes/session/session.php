@@ -56,7 +56,7 @@ namespace Gallery\Session;
           public function logout(){
              $this->is_log = false;
              session_unset();
-             header("Location: login");
+              header("Location: http://gallery.dev/login");
          }
          
 
