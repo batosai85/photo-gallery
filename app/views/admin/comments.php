@@ -22,6 +22,7 @@
         <th>Content</th>
         <th>Date</th>
         <th>Delete</th>
+        <?php use Gallery\Fn\Fn;?>
         <?php Fn::delete_comment($database); ?>
         <?php Fn::get_comments($database); ?>
     </table>

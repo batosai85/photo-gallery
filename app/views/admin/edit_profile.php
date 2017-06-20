@@ -7,6 +7,8 @@
         <!-- Page Heading -->
         <div class="row">
             <?php
+             use Gallery\User\User_query;
+             use Gallery\Fn\Fn;
             if (isset($_GET["edit"])) {
                 $user = User_query::get_user("users", "id", $_GET["edit"], $database);
             }

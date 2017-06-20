@@ -1,7 +1,11 @@
 <?php include "./app/views/front/includes/header.php"; ?>
 <?php
+  use Gallery\User\User;
+  use Gallery\Fn\Fn;
+
 $user = new User();
 Fn::login($user, $session, $database);
+
 ?>
 <div id="wrapper">
     <div class="container">

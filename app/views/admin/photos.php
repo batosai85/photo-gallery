@@ -23,6 +23,7 @@
                <th>Size</th>
                <th>Likes</th>
                <th>Actions</th>
+                <?php use Gallery\Fn\Fn;?>
                 <?php Fn::delete_photo($database);?>
                 <?php Fn::get_photos($database);?>
             </table>

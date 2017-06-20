@@ -11,7 +11,10 @@
     },
     "autoload" : {
        "classmap" : [
-           "app/classes"
-        ]
+           "app"
+        ],
+        "psr-4" :{
+            "Gallery\\" : "app/classes/"
+        }
     }
 }

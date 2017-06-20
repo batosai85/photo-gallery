@@ -1,6 +1,8 @@
 <?php
+ 
+   //namespace Gallery\CSR;
 
-    class Router {
+    class CSRouter {
         private $routes = [
 
         ];

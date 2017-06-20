@@ -1,4 +1,5 @@
 <?php
+namespace Gallery\Session;
 
      class Session {
          
@@ -38,7 +39,7 @@
                      if (password_verify($password, $result["password"])) {
                          $this->accept_login($result["username"], $result["photo"]);
                          $this->message = '';
-                         header("Location: http://localhost/php/gallery/admin/home");
+                         header("Location: admin/home");
                      }
              }else{
                  $this->message = "Wrong username or password";
@@ -55,7 +56,7 @@
           public function logout(){
              $this->is_log = false;
              session_unset();
-             header("Location: http://localhost/php/gallery/login");
+             header("Location: login");
          }
          
 

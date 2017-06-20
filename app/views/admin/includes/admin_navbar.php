@@ -12,8 +12,8 @@ if(!$session->get_is_login()){
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://localhost/php/gallery/all-photos">Gallery</a>
-        <a class="navbar-brand" href="http://localhost/php/gallery/logout">Logout</a>
+        <a class="navbar-brand" href="http://gallery.dev/all-photos">Gallery</a>
+        <a class="navbar-brand" href="http://gallery.dev/logout">Logout</a>
     </div>
     <!-- Top Menu Items -->
     <ul class="nav navbar-right top-nav">
@@ -46,7 +46,7 @@ if(!$session->get_is_login()){
                 </li>
                 <li class="divider"></li>
                 <li>
-                    <a  href="http://localhost/php/gallery/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>  Logout</a>
+                    <a  href="http://gallery.dev/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>  Logout</a>
                 </li>
         
             </ul>

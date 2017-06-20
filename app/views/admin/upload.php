@@ -8,6 +8,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h1 class="text-center">Upload</h1>
+            <?php use Gallery\Fn\Fn;?>
             <h3><?php Fn::upload_photo($database); ?></h3>
             <hr/>
             <form method="POST" enctype="multipart/form-data">

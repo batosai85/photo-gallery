@@ -1,5 +1,11 @@
 <?php
 
+namespace Gallery\User;
+use Gallery\Database\Db_object;
+use Gallery\User\User;
+use Gallery\Photo\Photo;
+use Gallery\Photo\Photo_query;
+use Gallery\comment\Comment_query;
 
 class User_query extends Db_object
 {

@@ -1,5 +1,8 @@
 <?php
-        
+    
+
+namespace Gallery\Photo;
+
       class Photo {
         
           private $id;

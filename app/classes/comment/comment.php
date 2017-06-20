@@ -1,4 +1,5 @@
 <?php
+namespace Gallery\Comment;
 
         class Comment {
             

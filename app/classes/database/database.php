@@ -1,4 +1,5 @@
 <?php
+namespace Gallery\Database;
 
      class Database {
 
@@ -13,9 +14,9 @@
 
          private function open_db(){
              try {
-                 $this->connection = new PDO('mysql:host=' . $this->config["host"] . ';dbname=' . $this->config["database"]
+                 $this->connection = new \PDO('mysql:host=' . $this->config["host"] . ';dbname=' . $this->config["database"]
                      ,$this->config["user"] , $this->config["password"]);
-             } catch (PDOException $e){
+             } catch (\PDOException $e){
                  die("Connection failed");
              }
          }
@@ -27,7 +28,7 @@
          public function database_query($query, $action){
              $statement = $this->connection->prepare($query);
              $statement->execute();
-             $result = $statement->$action(PDO::FETCH_ASSOC);
+             $result = $statement->$action(\PDO::FETCH_ASSOC);
              return $result;
          }
 

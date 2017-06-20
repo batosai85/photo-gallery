@@ -18,6 +18,7 @@
             </form>
             <div class="row">
              <div class="col-md-12">
+                 <?php use Gallery\Fn\Fn;?>
                  <?php Fn::get_photos_front($_SESSION["username"], $database);?>
              </div>
             </div> 

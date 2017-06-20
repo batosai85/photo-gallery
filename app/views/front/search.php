@@ -19,6 +19,8 @@
     <div class="row">
         <div class="col-md-12">
             <?php
+               use Gallery\Fn\Fn;
+
                if(isset($_POST["submit"])){
                 Fn::get_photos_front($_POST["search"], $database);
                }else if(isset($_GET["username"])){

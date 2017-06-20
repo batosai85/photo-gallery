@@ -6,6 +6,10 @@
     </div>
         <?php include "./app/views/admin/includes/admin_navbar.php";?>
             <?php include "./app/views/admin/includes/admin_sidebar.php";?>
+            <?php 
+               use Gallery\Photo\Photo_query;
+               use Gallery\Comment\Comment_query;
+            ?>
                 <div id="page-wrapper">
                     <div class="container-fluid">
                         <div class="pull-right">

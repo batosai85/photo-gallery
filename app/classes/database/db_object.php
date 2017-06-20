@@ -1,5 +1,7 @@
 <?php     
   
+namespace Gallery\Database;
+
     class Db_object {
         
         public static function get_one($table, $id, $database){

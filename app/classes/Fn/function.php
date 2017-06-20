@@ -1,4 +1,12 @@
 <?php
+namespace Gallery\Fn;
+
+use Gallery\User\User_query;
+use Gallery\Photo\Photo_query;
+use Gallery\Comment\Comment_query;
+
+
+$photo_query = new Photo_query();
 
 class Fn
 {

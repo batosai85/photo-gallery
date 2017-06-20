@@ -1,5 +1,9 @@
 <?php
 
+namespace Gallery\Photo;
+use Gallery\Database\Db_object;
+use Gallery\Photo\Photo;
+
 
 class Photo_query extends Db_object
 {

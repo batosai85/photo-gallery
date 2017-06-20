@@ -1,5 +1,9 @@
 <?php
- 
+
+namespace Gallery\Comment;
+use Gallery\Database\Db_object;
+use Gallery\Comment\Comment;
+
          class Comment_query extends Db_object {
              
              public static function post_comment($table, $POST, $photo_id, $database){

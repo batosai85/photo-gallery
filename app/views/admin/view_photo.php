@@ -13,6 +13,7 @@
             <hr/>
             <br/>
             <?php
+               use Gallery\Photo\photo_query;
                 if(isset($_GET["id"])){
                     $photo = Photo_query::get_photo("photos", $_GET["id"], $database);
                 }

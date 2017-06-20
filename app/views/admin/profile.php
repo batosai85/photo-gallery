@@ -14,6 +14,9 @@
             </div>
             <br/>
             <br/>
-                <?php Fn::get_user($database);?>
+                <?php
+                     use Gallery\Fn\Fn;
+                     Fn::get_user($database);
+                ?>
                 
             <?php include "./app/views/admin/includes/admin_footer.php";?>

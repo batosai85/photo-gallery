@@ -5,6 +5,7 @@
     <div class="row">
         <hr/>
         <div class="col-md-12">
+            <?php use Gallery\Fn\Fn;?>
             <?php Fn::get_photo_front($database); ?>
         </div>
     </div>

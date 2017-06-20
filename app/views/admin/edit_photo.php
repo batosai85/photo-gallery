@@ -13,6 +13,7 @@
             <br/>
             <br/>
             <?php
+                use Gallery\Photo\photo_query;
                 if(isset($_POST["submit"])){
                     Photo_query::update_photo($_POST, $_GET["edit"], $database);
                 }
