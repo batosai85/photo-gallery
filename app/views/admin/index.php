@@ -26,7 +26,6 @@
                                     'packages': ['bar']
                                 });
                                 google.charts.setOnLoadCallback(drawChart);
-
                                 function drawChart() {
                                     var data = google.visualization.arrayToDataTable([
                                     ['Gallery details', 'Count'],
@@ -40,20 +39,16 @@
                                                       echo $likes;
                                     ?>]
                                 ]);
-
                                     var options = {
                                         chart: {
                                             title: '',
                                         }
                                     };
-
                                     var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-
                                     chart.draw(data, options);
                                 }
                             </script>
                             <div id="columnchart_material"></div>
-
                         </div>
                         <div class='col-md-6'>
                            <br/>

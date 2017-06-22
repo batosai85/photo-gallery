@@ -7,15 +7,17 @@
         <!-- Page Heading -->
         <div class="row">
             <?php
-             use Gallery\User\User_query;
-             use Gallery\Fn\Fn;
-            if (isset($_GET["edit"])) {
-                $user = User_query::get_user("users", "id", $_GET["edit"], $database);
-            }
+               use Gallery\User\User_query;
+               if (isset($_GET["edit"])) {
+                  $user = User_query::get_user("users", "id", $_GET["edit"], $database);
+               }
             ?>
             <div class="col-md-12">
                 <h1 class="text-center">Edit : <?php echo $user->get_username(); ?></h1>
-                <?php Fn::edit_user($database, $user); ?>
+                <?php 
+                    use Gallery\Fn\Fn;
+                    Fn::edit_user($database, $user);
+                ?>
                 <hr/>
             </div>
 

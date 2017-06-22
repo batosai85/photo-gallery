@@ -47,6 +47,7 @@ img {
 
 h3 {
     margin: 5px;
+    height:30px !important;
 }
 
 h5 {
@@ -178,7 +179,9 @@ h5 {
     transition: 0.5s linear all;
     font-weight: 900;
 }
-
+ .comments {
+    min-height:40px !important;
+ }
 .btn-comments {
     margin-left: 5px;
 }

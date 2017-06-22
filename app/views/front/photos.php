@@ -4,7 +4,8 @@
         header("Location: http://gallery.dev");
     }
 ?>
-<?php include "./app/views/front/includes/navbar.php"?> ;
+<?php include "./app/views/front/includes/navbar.php"?> 
+<br/>
     <!-- Page Content -->
     <div class="container">
     <div class="pull-right">
@@ -23,8 +24,10 @@
             </form>
             <div class="row">
              <div class="col-md-12">
-                 <?php use Gallery\Fn\Fn;?>
-                 <?php Fn::get_photos_front($_SESSION["username"], $database);?>
+                 <?php 
+                   use Gallery\Fn\Fn;
+                   Fn::get_photos_front($_SESSION["username"], $database);
+                 ?>
              </div>
             </div> 
     <?php include "./app/views/front/includes/footer.php"?>

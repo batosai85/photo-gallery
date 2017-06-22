@@ -1,7 +1,4 @@
 <?php include "./app/views/front/includes/header.php";?>
-<?php use Gallery\User\User;
-      use Gallery\Fn\Fn;
-?>
 
 <div id="wrapper">
     <div class="container">
@@ -10,9 +7,8 @@
             <div class="col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1">
              <div class="message-div">
                 <?php  
-                
-                    $user = new User();
-                    Fn::signup($user, $database);
+                      use Gallery\Fn\Fn;
+                      Fn::signup($user, $database);
                 ?>
                 </div><br/>
                 <form method="post"  enctype="multipart/form-data">

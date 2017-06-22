@@ -3,115 +3,112 @@
 
         use PHPRouter\RouteCollection;
         use PHPRouter\Router;
-        use PHPRouter\Route;
-        
-        //use Gallery\CSR\CSRouter;
-
-
+        use PHPRouter\Route;  
+    
         $collection = new RouteCollection();
 
         $collection->attachRoute(new Route('/', array(
-            '_controller' => 'CSRouter::route_login',
+            '_controller' => 'pagesCtrl::login',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/', array(
-            '_controller' => 'CSRouter::route_login',
+            '_controller' => 'pagesCtrl::login',
             'methods' => 'POST'
         )));
         $collection->attachRoute(new Route('/login', array(
-            '_controller' => 'CSRouter::route_login',
+            '_controller' => 'pagesCtrl::login',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/login', array(
-            '_controller' => 'CSRouter::route_login',
+            '_controller' => 'pagesCtrl::login',
             'methods' => 'POST'
         )));
         $collection->attachRoute(new Route('/logout', array(
-            '_controller' => 'CSRouter::route_logout',
+            '_controller' => 'pagesCtrl::logout',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/signup', array(
-            '_controller' => 'CSRouter::route_signup',
+            '_controller' => 'pagesCtrl::signup',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/signup', array(
-            '_controller' => 'CSRouter::route_signup',
+            '_controller' => 'pagesCtrl::signup',
             'methods' => 'POST'
         )));
         $collection->attachRoute(new Route('/admin/home', array(
-            '_controller' => 'CSRouter::route_admin',
+            '_controller' => 'pagesCtrl::admin',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/admin/edit-photo', array(
-            '_controller' => 'CSRouter::route_edit_photo',
+            '_controller' => 'pagesCtrl::edit_photo',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/admin/edit-photo', array(
-            '_controller' => 'CSRouter::route_edit_photo',
+            '_controller' => 'pagesCtrl::edit_photo',
             'methods' => 'POST'
         )));
         $collection->attachRoute(new Route('/admin/view-photo', array(
-            '_controller' => 'CSRouter::route_view_photo',
+            '_controller' => 'pagesCtrl::view_photo',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/admin/photos', array(
-            '_controller' => 'CSRouter::route_admin_photos',
+            '_controller' => 'pagesCtrl::admin_photos',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/admin/photos', array(
-            '_controller' => 'CSRouter::route_admin_photos',
+            '_controller' => 'pagesCtrl::admin_photos',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/admin/upload', array(
-            '_controller' => 'CSRouter::route_upload',
+            '_controller' => 'pagesCtrl::upload',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/admin/upload', array(
-            '_controller' => 'CSRouter::route_upload',
+            '_controller' => 'pagesCtrl::upload',
             'methods' => 'POST'
         )));
         $collection->attachRoute(new Route('/admin/comments', array(
-            '_controller' => 'CSRouter::route_comments',
+            '_controller' => 'pagesCtrl::comments',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/admin/profile', array(
-            '_controller' => 'CSRouter::route_profile',
+            '_controller' => 'pagesCtrl::profile',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/admin/edit_profile', array(
-            '_controller' => 'CSRouter::route_edit_profile',
+            '_controller' => 'pagesCtrl::edit_profile',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/admin/edit_profile', array(
-            '_controller' => 'CSRouter::route_edit_profile',
+            '_controller' => 'pagesCtrl::edit_profile',
             'methods' => 'POST'
         )));
         $collection->attachRoute(new Route('/admin/delete-profile', array(
-            '_controller' => 'CSRouter::route_delete_profile',
+            '_controller' => 'pagesCtrl::delete_profile',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/all-photos', array(
-            '_controller' => 'CSRouter::route_front_photos',
+            '_controller' => 'pagesCtrl::front_photos',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/all-photos', array(
-            '_controller' => 'CSRouter::route_front_photos',
+            '_controller' => 'pagesCtrl::front_photos',
             'methods' => 'POST'
         )));
         $collection->attachRoute(new Route('/photo', array(
-            '_controller' => 'CSRouter::route_front_photo',
+            '_controller' => 'pagesCtrl::front_photo',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/photo', array(
-            '_controller' => 'CSRouter::route_front_photo',
+            '_controller' => 'pagesCtrl::front_photo',
             'methods' => 'POST'
         )));
         $collection->attachRoute(new Route('/search', array(
-            '_controller' => 'CSRouter::route_front_search',
+            '_controller' => 'pagesCtrl::front_search',
             'methods' => 'GET'
         )));
         $collection->attachRoute(new Route('/search', array(
-            '_controller' => 'CSRouter::route_front_search',
+            '_controller' => 'pagesCtrl::front_search',
             'methods' => 'POST'
         )));
         

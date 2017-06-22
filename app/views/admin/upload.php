@@ -25,9 +25,9 @@
                 <textarea type="text" class="form-control" name="photo_description"></textarea>
                 <br/>
                 <label for="filename">Upload photo : </label>
-                                    <span class="btn btn-file file-button">
-                                        Browse.. <input type="file" name="filename">
-                                    </span>
+                    <span class="btn btn-file file-button">
+                        Browse.. <input type="file" name="filename">
+                    </span>
                 <br/>
                 <br/>
                 <input type="submit" class="btn btn-info" value="submit" name="submit"/></form>

@@ -55,7 +55,7 @@
                     <i class="fa fa-file-image-o" aria-hidden="true"></i> 
                     Description : 
                 </p>
-                 <blockquote
+                 <blockquote>
                   <span class="word-wrap"><?php echo $photo->get_photo_description();?></span>
                 </blockquote>
             </div>
