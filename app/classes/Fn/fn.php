@@ -11,7 +11,7 @@ class Fn
     public static function login($user, $session, $database)
     {
         if (isset($_SESSION["user_login"])) {
-            header("Location: http://localhost/php/gallery/admin/home");
+            header("Location: http://gallery.dev/admin/home");
         }
         $user->set_username = '';
         $user->set_password = '';

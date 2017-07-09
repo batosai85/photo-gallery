@@ -27,7 +27,7 @@ class User_query extends Db_object
                 $query = "INSERT INTO users (photo, username, password, first_name, last_name) ";
                 $query .= "VALUES ('$photo', $username, '$password', $first_name, $last_name)";
                 $result = $database->database_query($query, "fetch");
-                header("Location: http://localhost/php/gallery/login");
+                header("Location: http://gallery.dev/login");
             } else {
                 return false;
             }
